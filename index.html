@@ -3,15 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>Introduction to html</title>
+        <link href="stylesheet.css" rel=stylesheet>
     </head>
     <body>
         <style>
             body {
                 background: lavenderblush;
+                background-image: url("http://blog.hostbaby.com/wp-content/uploads/2014/03/CountryLeather_1400x900.jpg");
+                font-family: inherit
             }
-            .kitten-image {
-                border: thick dashed salmon;
-                box-shadow: 10px 10px 100px rgb(140, 172, 231);    
+            .pif {
+                box-shadow: 10px 10px 50px rgb(140, 172, 231);
+                border-radius: 8px;
+                width: 300px;    
     	    }
             .move-style {
                 cursor: move;
@@ -20,23 +24,44 @@
                 cursor: pointer;
             }
             p {
-                color:green;
+                color: white;
+                font-weight: 300;
             }
             .greetings {
                 font-weight: bold;
-                text-decoration: underline;
-                font-family: Helvetica, Arial, sans-serif;
-                color: #8001ff;
+
+                font-family: inherit;
+                color: white;
+            }
+            .rabbit {
+                box-shadow: 10px 10px 50px rgb(140, 172, 231);
+                border-radius: 20px;
+                width: 300px;
+            }
+            .profile-action {
+                display: block;
+                border-radius: 4px;
+                background-color: white;
+                font-family: inherit;
+            }
+            .profile-action:hover {
+                background-color: #00A5D2;
+                color: white;
+                cursor: pointer;
             }
         </style>
         <h1 class="greetings">Hello Roman</h1>
-        <!-- Image credit: Nicolas Suzor, https://www.flickr.com/photos/nicsuzor/ - via Flickr, Creative Commons. -->
-        <img src="http://udacity.github.io/fend/lessons/L3/problem-set/02-style-an-image/kitten.jpg" alt="kitten" class="kitten-image move-style">
-        <br/>
-        <button class="pointer">
-            Not working button
-        </button>
         <p><i>This is my first webpage written in HTML and CSS</i></p>
+        <!-- Image credit: Nicolas Suzor, https://www.flickr.com/photos/nicsuzor/ - via Flickr, Creative Commons. -->
+        <img class=pif src="https://vini-puh.ru/wp-content/uploads/2018/01/Priklyucheniya_Pifa_-_Gde_zhe_Pif_-_Grigorij_Oster_2.jpg" alt="Pif">
+        <br/>
+
+        <div class="table">
+            <button class="profile-action" onclick="window.location.href='https://ru.wikipedia.org/wiki/%D0%9F%D0%B8%D1%84_(%D0%BA%D0%BE%D0%BC%D0%B8%D0%BA%D1%81)'">Read about Pif story</button>
+            <button class="profile-action" onclick="window.location.href='https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%BE%D0%BB%D0%B8%D0%BA_%D0%9F%D0%B8%D1%82%D0%B5%D1%80'">Read about Peter The Rabbit story</button>
+        </div>
+        <img class=rabbit src="https://images-na.ssl-images-amazon.com/images/I/911Qd7BwgEL.jpg"
+
 
     </body>
 </html>
